@@ -1,0 +1,66 @@
+@import '../../index.scss';
+
+.main_community {
+  width: 90%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 7rem 0 7rem;
+  border-bottom: 2px solid #1fa1fb;
+  @include media("mobile"){
+    padding: 2rem 0rem 2rem 0rem;
+  }
+  .content {
+    display: flex;
+    align-content: center;
+    justify-content: flex-start;
+    h3 {
+      font-family: Lexend;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 20px;
+      color: #8279e3;
+    }
+    p {
+      font-family: Lexend;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 26px;
+      color: #726f8c;
+    }
+    button {
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #8279e3;
+        background: none;
+        padding: 0.4rem 2rem;
+        border: 1px solid #664FEF;
+    }
+    .camabaImgMobile{
+      display: none;
+      @media only screen and (max-width : 767px){
+        display: block;
+      }
+    }
+  }
+  .img {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    @media only screen and (max-width : 767px){
+      display: none;
+    }
+    img {
+      display: block;
+      position: relative;
+      bottom: 1rem;
+    }
+  }
+}
+

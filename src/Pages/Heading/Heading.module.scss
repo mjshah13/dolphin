@@ -1,0 +1,121 @@
+@import '../../index.scss';
+
+.home_container {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url('../../../public/Assets/header.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  .sideNavbarClass{
+    position: absolute;
+    background-color: #B48EE7;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    .navbar_links{
+      padding: 1rem;
+      p{
+        color: #ffffff;
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        border-bottom: 1px solid #ffffff;
+        padding: 20px;
+      }
+    }
+    .navbar_icons{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-top: 5rem;
+      img{
+        padding: 0 1rem;
+      }
+    }
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+    @include media('mobile') {
+      padding: 1rem 1rem;
+    }
+    .navbar_links {
+      display: flex;
+      @include media('mobile') {
+        display: none;
+      }
+      p {
+        padding: 0 1rem;
+        color: #ffffff;
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        position: relative;
+        top: 10px;
+      }
+    }
+    .navbar_icons {
+      @include media('mobile') {
+        display: none;
+      }
+      img {
+        padding: 0 1.3rem;
+      }
+    }
+    .navbar_icons_mobile{
+        display: none;
+        @include media("mobile"){
+            display: block;
+        }
+    }
+  }
+  .main_text {
+    width: 70%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 10rem;
+    color: #ffffff;
+    @include media('mobile') {
+      width: 100%;
+      padding-top: 8rem;
+    }
+    h1 {
+      font-family: Cocogoose;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 56px;
+      line-height: 80px;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      @include media('mobile') {
+        font-size: 36px;
+        line-height: 50px;
+        padding-bottom: 0.5rem;
+      }
+    }
+    p {
+      font-size: 25px;
+      font-weight: lighter;
+      text-align: center;
+      @include media('mobile') {
+        font-size: 15px;
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
+  }
+}

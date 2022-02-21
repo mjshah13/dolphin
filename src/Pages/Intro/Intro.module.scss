@@ -1,0 +1,80 @@
+@import '../../index.scss';
+
+.main_intro {
+  width: 100%;
+  height: 100vh;
+  background-image: url('../../../public/Assets/wrw.png');
+  background-color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  overflow: hidden;
+  @include media('mobile') {
+    background-image: url('../../../public/Assets/wrwmobile.png');
+    height: 80vh;
+  }
+  .content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5rem 15rem;
+    text-align: center;
+    @include media('mobile') {
+      padding: 0 1rem;
+    }
+    p {
+      font-family: Lexend;
+      font-style: normal;
+      font-weight: 300;
+      font-size: 24px;
+      line-height: 42px;
+      text-align: center;
+      color: #444444;
+      @include media('mobile') {
+        font-size: 16px;
+      }
+    }
+    span{
+      color: #F8BDD6;
+    }
+  }
+  .intro {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 8rem;
+    @include media('mobile') {
+      padding-top: 4rem;
+    }
+    h1 {
+      font-family: COCOGOOSE;
+      font-style: normal;
+      font-weight: lighter;
+      font-size: 64px;
+      line-height: 115.5%;
+      color: #7598ec;
+      @include media('mobile') {
+        font-size: 44px;
+      }
+      span {
+        font-weight: bold;
+        color: #3d42fb;
+      }
+    }
+  }
+  .linediv {
+    padding-left: 14rem;
+    @include media('mobile') {
+      padding: 0;
+      img{
+        width: 50%;
+        height: 0.2rem;
+      }
+    }
+  }
+}
