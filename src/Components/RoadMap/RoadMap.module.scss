@@ -1,0 +1,57 @@
+@import "../../index.scss";
+
+.main_container{
+    .heading_container{
+        h1{
+            color: #7598EC;
+            font-weight: 250;
+            line-height: 115.5%;
+            word-spacing: -15px;
+            font-size: 54px;
+            margin-left: 80px;
+        span{
+            font-weight: 600;
+        }
+        }
+        img{
+            width: 20%;
+        }
+    }
+    .first_image_container{
+        img{
+            width: 20%;
+            @include media("mobile") {
+                display: none;
+                }
+        }
+    }
+    .roadmap_container{
+        display: flex;
+     padding: 20px;
+     @include media("mobile") {
+       flex-direction: column;
+      }
+        .roadmapOne_container{
+         margin: 0 auto;
+          img{
+              width: 10rem;
+          }
+        }
+    }
+    .underline_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img{
+            width: 90%;
+        }
+    }
+    .second_image_container{
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        @include media("mobile") {
+          display: none;
+          }
+    }
+}
