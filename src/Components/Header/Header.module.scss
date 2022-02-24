@@ -1,6 +1,6 @@
-@import "../../index.scss";
+@import '../../index.scss';
 .home_container {
-  background-image: url("../../Assets/bg-img.png");
+  background-image: url('../../Assets/bg-img.png');
   width: 100%;
   height: 100vh;
   overflow: hidden;
@@ -12,106 +12,138 @@
     display: flex;
     justify-content: space-between;
     padding: 2rem 3rem;
-    @include media("mobile") {
-      padding: 2rem 0rem;
+    @include media('mobile') {
+      padding: 1rem;
     }
     .logo_container {
       img {
         width: 100%;
         height: auto;
-        @include media("mobile") {
-      width: 80%;
+        @include media('mobile') {
+          width: 80%;
         }
-
       }
     }
     .icons_container {
-      @include media("mobile") {
-      
+      @include media('mobile') {
+        display: none;
       }
       img {
         width: 2rem;
         height: 2rem;
         margin-right: 40px;
-        @include media("mobile") {
+        @include media('mobile') {
           margin-right: 10px;
-      
         }
-
+      }
+      #img2 {
+        margin-right: 0rem;
       }
     }
   }
   .text_div {
     .center_container {
-    position: relative;
-    left: 30px;
-    margin-top: 30px;
-    @include media("mobile") {
-    left: 0;
-        }
+      position: relative;
+      left: 30px;
+      margin-top: 30px;
+      @include media('mobile') {
+        left: 0;
+      }
       .text_container {
         padding-top: 60px;
-     margin: 0 auto;
-       width: 80%;
-        background: linear-gradient(144.92deg, rgba(255, 255, 255, 0.13) 4.15%, #C498E5 95%);
-        height: 80vh;
-        @include media("mobile") {
+        margin: 0 auto;
+        width: 80%;
+        background: linear-gradient(
+          144.92deg,
+          rgba(255, 255, 255, 0.13) 4.15%,
+          #c498e5 95%
+        );
+        height: 95vh;
+        @include media('mobile') {
           padding-top: 120px;
-        
-      }
-      
-        p{
-            font-size: 56px;
-            font-weight: 250;
-            color: white;
-            line-height: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include media("mobile") {
-           font-size: 30px;
-                }
+          height: 80vh;
+          width: 90%;
         }
-        h3{
-            font-size: 56px;
-            font-weight: 600;
-            color: white;
-            line-height: 0.5;
-            color: #FFCDEA;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            @include media("mobile") {
-              font-size: 30px;
-                }
+
+        p {
+          font-size: 64px;
+          font-weight: 250;
+          color: white;
+          line-height: 1;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include media('mobile') {
+            font-size: 40px;
+          }
         }
-        .email_container{
-            margin-top: 2rem;
-          position: relative;
-          left: 15%;
-          @include media("mobile") {
-          
-              }
-            label{
-                color: #fff;
-              
+        h3 {
+          font-size: 64px;
+          font-weight: 600;
+          color: white;
+          line-height: 0.5;
+          color: #ffcdea;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          @include media('mobile') {
+            font-size: 40px;
+          }
+        }
+        .form {
+          display: grid;
+          justify-content: center;
+          align-items: center;
+          margin-top: 5rem;
+          div {
+          }
+          span {
+            display: block;
+            font-family: Lexend;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 18px;
+            line-height: 22px;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+          }
+          input {
+            @include media('mobile') {
+              width: 300px;
             }
-            hr{
-                width: 70%;
-                color: #fff;
+            width: 458px;
+            border: none;
+            height: 2rem;
+            border-bottom: 2px solid #ffffff;
+            background: none;
+            font-family: Lexend;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            opacity: 0.8;
+            outline: none;
+            margin-bottom: 1rem;
+          }
+
+          button {
+            width: 458px;
+            border: none;
+            height: 2rem;
+            background: none;
+            border: 2px solid #ffffff;
+            font-family: Lexend;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 20px;
+            color: #ffffff;
+            @include media('mobile') {
+              width: 300px;
             }
-        button{
-            background-color: transparent;
-            color: #fff;
-            box-shadow: none;
-            border-color: #fff;
-            padding: 0.3rem 9.4rem;
-            border: 1px solid #fff;
-            @include media("mobile") {
-            padding:0.2rem 5rem ;
-           
-                }
-        }
+          }
         }
       }
     }

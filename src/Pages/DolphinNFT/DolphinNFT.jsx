@@ -1,17 +1,19 @@
-import React from 'react'
-import Footer from '../../Components/Footer/Footer';
+import React from 'react';
 import Header from '../../Components/Header/Header';
 import RoadMap from '../../Components/RoadMap/RoadMap';
-import styles from "./DolphinNFT.module.scss";
+import Footer from '../../Components/Footer/Footer';
+import styles from './DolphinNFT.module.scss';
+import Community from '../../Components/Community/Community';
 
 const DolphinNFT = () => {
   return (
     <div className={styles.home_container}>
-        <Header/>
-        <RoadMap/> 
-        <Footer/>
-        </div>
-  )
-}
+      <Header />
+      <RoadMap />
+      <Community path={'dolphin'} />
+      <Footer path={'dolphin'} />
+    </div>
+  );
+};
 
-export default DolphinNFT
+export default DolphinNFT;
