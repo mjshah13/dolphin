@@ -8,7 +8,7 @@ function AppRoutes() {
       <Router>
         <Routes>
           <Route path='/' element={<Home />}></Route>
-          <Route path='/dolphinNFT' element={<DolphinNFT/>}></Route>
+          <Route path='/dolphin-nft' element={<DolphinNFT/>}></Route>
         </Routes>
       </Router>
     </>
