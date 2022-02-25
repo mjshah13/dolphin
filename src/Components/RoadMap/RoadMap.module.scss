@@ -1,0 +1,71 @@
+@import '../../index.scss';
+
+.main_container {
+  background-color: black;
+  .container {
+    height: 100vh;
+    width: 100%;
+    background: rgb(2, 0, 36);
+    background: linear-gradient(
+      106deg,
+      rgba(2, 0, 36, 1) 0%,
+      rgba(23, 2, 53, 1) 26%,
+      rgba(37, 3, 64, 0.981127485173757) 38%,
+      rgba(108, 9, 121, 0.6057773451177346) 100%,
+      rgba(0, 212, 255, 1) 100%
+    );
+    .div {
+      background-image: url('../../Assets//dolphinbg.png');
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 100vh;
+      width: 100%;
+
+      .heading_container {
+        h1 {
+          // color: #7598ec;
+          color: white;
+          font-weight: 250;
+          line-height: 115.5%;
+          word-spacing: -15px;
+          font-size: 54px;
+          margin-left: 8rem;
+          padding-top: 5rem;
+          margin-bottom: 0rem;
+          span {
+            font-weight: 600;
+          }
+        }
+        img {
+          width: 25%;
+          margin-bottom: 8rem;
+        }
+      }
+
+      .roadmap_container {
+        display: flex;
+        padding: 20px;
+        @include media('mobile') {
+          flex-direction: column;
+        }
+        .roadmapOne_container {
+          margin: 0 auto;
+          img {
+            width: 10rem;
+          }
+        }
+      }
+      .underline_container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+          width: 100%;
+          position: relative;
+          top: -34px;
+        }
+      }
+    }
+  }
+}

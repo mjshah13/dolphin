@@ -3,7 +3,6 @@
 .cards {
   width: 100%;
   height: 100%;
-  //   padding-top: 15rem;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -25,21 +24,18 @@
   }
 }
 
-.normal{
-    @include media("mobile"){
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
+.normal {
+  @include media('mobile') {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }
 
 .tilled {
   position: relative;
   top: 15rem;
   @include media('mobile') {
-      top: 0;
-    //   display: flex;
-    //   justify-content: center;
-    //   align-items: center;
+    top: 0;
   }
 }

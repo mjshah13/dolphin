@@ -1,22 +1,22 @@
 import React from 'react';
 import styles from './Home.module.scss';
 import { Row, Col } from 'reactstrap';
-import Heading from '../Heading/Heading';
-import Cards from '../Cards/Cards';
-import Intro from '../Intro/Intro';
-import Contact from '../Contact/Contact';
-import Community from '../Community/Community';
-import Footer from '../Footer/Footer';
+import Heading from '../../Components/Heading/Heading';
+import Card from '../../Components/Card/Card';
+import Intro from '../../Components/Intro/Intro';
+import Contact from '../../Components/Contact/Contact';
+import Community from '../../Components/Community/Community';
+import Footer from '../../Components/Footer/Footer';
 
 const HomePage = () => {
   return (
     <>
       <Heading />
-      <Cards />
+      <Card />
       <Intro />
       <Contact />
-      <Community />
-      <Footer />
+      <Community path={'home'} />
+      <Footer path={'home'} />
     </>
   );
 };

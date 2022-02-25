@@ -50,7 +50,7 @@ const Heading = () => {
               <div className={styles.navbar_icons}>
                 <img src='Assets/discordicon.png' alt='' />
                 <img src='Assets/instagramicon.png' alt='' />
-                <img src='Assets/twittericon.png' alt='' />
+                <img id={styles.img} src='Assets/twittericon.png' alt='' />
               </div>
             </div>
           ) : null}
@@ -58,8 +58,6 @@ const Heading = () => {
         <Col sm={12} md={12}>
           <div className={styles.main_text}>
             <div>
-              {/* <h1>Discover, Collect and Sell your </h1>
-              <h1>Metaverse House NFTs</h1> */}
               <h1>Discover, Collect and Sell your Metaverse House NFTs</h1>
             </div>
             <div>

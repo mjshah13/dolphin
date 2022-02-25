@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from './Cards.module.scss';
 import { Row, Col } from 'reactstrap';
-import CardsComponent from '../../Components/Cards/Cards';
+import CardsComponent from '../Cards/Cards';
 
-const Cards = () => {
+const Card = () => {
   return (
     <div className={styles.main_cards}>
       <Row>
@@ -24,4 +24,4 @@ const Cards = () => {
   );
 };
 
-export default Cards;
+export default Card;
