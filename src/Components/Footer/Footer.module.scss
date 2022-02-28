@@ -7,6 +7,12 @@
   position: relative;
   overflow: hidden;
   padding: 0.4rem 3rem 1rem 3rem;
+  background-image: url('../../../public/Assets/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  
   @include media('mobile') {
     padding: 0rem 1rem 1rem 1rem;
   }

@@ -8,7 +8,6 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   .sideNavbarClass {
     position: absolute;
     background-color: #b48ee7;
@@ -51,6 +50,36 @@
       @include media('mobile') {
         display: none;
       }
+      .active_links {
+        padding: 0 1rem;
+        color: #ffffff;
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        position: relative;
+        top: 10px;
+        a {
+          color: #ffffff;
+          text-decoration: none;
+        }
+        .active_links,
+        a:before {
+          content: '';
+          top: 110%;
+          position: absolute;
+          left: 16px;
+          width: 0;
+          height: 2px;
+          border-bottom: 2px solid #60cfff;
+          transition: all 0.3s ease-in-out;
+        }
+
+        a::before {
+          width: 40%;
+        }
+      }
       p {
         padding: 0 1rem;
         color: #ffffff;
@@ -61,6 +90,10 @@
         line-height: 22px;
         position: relative;
         top: 10px;
+        a{
+          text-decoration: none;
+          color: #ffffff;
+        }
       }
     }
     .navbar_icons {
@@ -98,7 +131,7 @@
     h1 {
       font-family: Cocogoose;
       font-style: normal;
-      font-weight: normal;
+      font-weight: bold;
       font-size: 56px;
       line-height: 80px;
       display: flex;

@@ -7,7 +7,11 @@
   position: relative;
   overflow: hidden;
   padding: 4rem 3rem 0 3rem;
-
+  background-image: url('../../../public/Assets/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   @include media('mobile') {
     padding: 2rem 0rem 0rem 0rem;
   }
@@ -33,7 +37,7 @@
           font-weight: bold;
           font-size: 16px;
           line-height: 20px;
-          color: #8279e3;
+          color: #F5899D;
           margin-bottom: 1rem;
         }
         p {
@@ -42,7 +46,7 @@
           font-weight: normal;
           font-size: 16px;
           line-height: 26px;
-          color: #726f8c;
+          color: #ffffff;
           margin-bottom: 0.2rem;
         }
         button {
@@ -52,10 +56,10 @@
           font-weight: normal;
           font-size: 16px;
           line-height: 20px;
-          color: #8279e3;
+          color: #ffffff;
           background: none;
           padding: 0.4rem 2rem;
-          border: 1px solid #664fef;
+          border: 1px solid #F5899D;
         }
       }
       .camabaImgMobile {

@@ -2,8 +2,11 @@ import React from 'react';
 import styles from './Heading.module.scss';
 import { Row, Col } from 'reactstrap';
 import { useState } from 'react';
+import { useEffect } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Heading = () => {
+  let location = useLocation();
   let [sideNavbarState, setSideNavbarState] = useState(false);
   function sideNavMobile() {
     setSideNavbarState(true);
@@ -11,6 +14,9 @@ const Heading = () => {
   function sideNavMobileCloser() {
     setSideNavbarState(false);
   }
+  useEffect(()=>{
+    console.log(location.pathname)
+  },[])
   return (
     <div className={styles.home_container}>
       <Row>
@@ -20,11 +26,21 @@ const Heading = () => {
               <img src='Assets/heading.png' alt='heading image' />
             </div>
             <div className={styles.navbar_links}>
-              <p>Home</p>
-              <p>About</p>
-              <p>DolphinArc NFTS</p>
-              <p>Blog</p>
-              <p>FAQ</p>
+              <p className={location.pathname === "/" ? styles.active_links : ""}>
+                <Link to=''>Home</Link>
+              </p>
+              <p className={location.pathname === "/about" ? styles.active_links : ""}>
+                <Link to=''>About</Link>
+              </p>
+              <p className={location.pathname === "/dolphin-nft" ? styles.active_links : ""}>
+                <Link to=''>DolphinArc NFTS</Link>
+              </p>
+              <p className={location.pathname === "/blog" ? styles.active_links : ""}>
+                <Link to=''>Blog</Link>
+              </p>
+              <p className={location.pathname === "/faq" ? styles.active_links : ""}>
+                <Link to=''>FAQ</Link>
+              </p>
             </div>
             <div className={styles.navbar_icons}>
               <img src='Assets/discordicon.png' alt='' />
