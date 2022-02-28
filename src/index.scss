@@ -88,7 +88,7 @@ a {
 /* Handle */
 ::-webkit-scrollbar-thumb {
   // background: #ee405d59;
-  background: $maroon;
+  background: $light_pink;
   border-radius: 5px;
 }
 
@@ -100,7 +100,7 @@ a {
 
 @mixin media($breakpoint) {
   @if $breakpoint == mobile {
-    @media only screen and (max-width: 1024px) {
+    @media only screen and (max-width: 767px) {
       @content;
     }
   }

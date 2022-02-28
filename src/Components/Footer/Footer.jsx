@@ -1,15 +1,10 @@
-import React, { useEffect } from 'react';
+import React from 'react';
 import styles from './Footer.module.scss';
 import { Row, Col } from 'reactstrap';
 
-const Footer = ({ path }) => {
-  const styleHandler = () => {
-    if (path === 'dolphin') return styles.bg_dark;
-    return styles.main_footer;
-  };
-
+const Footer = () => {
   return (
-    <div className={styleHandler()}>
+    <div className={styles.bg_dark}>
       <Row>
         <Col sm={12} md={12}>
           <div className={styles.footer}>
