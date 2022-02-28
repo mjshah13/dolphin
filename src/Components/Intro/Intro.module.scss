@@ -2,17 +2,40 @@
 
 .main_intro {
   width: 100%;
-  height: 100vh;
-  background-image: url('../../../public/Assets/wrw.png');
-  background-color: #ffffff;
+  height: 170vh;
+  background-image: url('../../../public/Assets/wrw1.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  background-attachment: fixed;
   overflow: hidden;
   @include media('mobile') {
-    background-image: url('../../../public/Assets/wrwmobile.png');
-    height: 80vh;
+    background-image: url('../../../public/Assets/wrw1mobile.png');
+    height: 100vh;
+    width: 100%;
+  }
+  .topPic {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 7rem;
+    .desktop {
+      display: block;
+      width: 839px;
+      height: 347px;
+      @include media('mobile') {
+        display: none;
+      }
+    }
+    .mobile {
+      display: none;
+      @include media('mobile') {
+        display: block;
+        width: 316px;
+        height: 131px;
+      }
+    }
   }
   .content {
     width: 100%;
@@ -32,13 +55,13 @@
       font-size: 24px;
       line-height: 42px;
       text-align: center;
-      color: #444444;
+      color: #ffffff;
       @include media('mobile') {
         font-size: 16px;
       }
     }
-    span{
-      color: #F8BDD6;
+    span {
+      color: #f8bdd6;
     }
   }
   .intro {
@@ -51,19 +74,19 @@
     @include media('mobile') {
       padding-top: 4rem;
     }
-    h1 {
+    p {
       font-family: COCOGOOSE;
       font-style: normal;
       font-weight: lighter;
       font-size: 64px;
       line-height: 115.5%;
-      color: #7598ec;
+      color: #ffcdea;
       @include media('mobile') {
         font-size: 44px;
       }
       span {
         font-weight: bold;
-        color: #3d42fb;
+        color: #ffcdea;
       }
     }
   }
@@ -71,7 +94,7 @@
     padding-left: 14rem;
     @include media('mobile') {
       padding: 0;
-      img{
+      img {
         width: 50%;
         height: 0.2rem;
       }

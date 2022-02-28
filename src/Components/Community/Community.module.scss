@@ -8,6 +8,11 @@
   position: relative;
   overflow: hidden;
   padding: 4rem 3rem 0 3rem;
+  background-image: url('../../../public/Assets/footer.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
   @include media('mobile') {
     padding: 2rem 0rem 0rem 0rem;
   }
@@ -29,6 +34,89 @@
           margin-left: 1rem;
           max-width: 80%;
         }
+        h3 {
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 20px;
+          color: #F5899D;
+          margin-bottom: 1rem;
+        }
+        p {
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 26px;
+          color: #ffffff;
+          margin-bottom: 0.2rem;
+        }
+        button {
+          margin-top: 1rem;
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          background: none;
+          padding: 0.4rem 2rem;
+          border: 1px solid #F5899D;
+        }
+      }
+      .camabaImgMobile {
+        display: none;
+        @media only screen and (max-width: 767px) {
+          display: block;
+          padding-left: 1rem;
+        }
+      }
+    }
+    .img {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      @media only screen and (max-width: 767px) {
+        display: none;
+      }
+      img {
+        display: block;
+        position: relative;
+        bottom: 1rem;
+      }
+    }
+  }
+  hr {
+    border-top: 2.5px solid #1fa1fb;
+    border-radius: 5px;
+    @media only screen and (max-width: 767px) {
+      margin: 1rem;
+    }
+  }
+}
+.bg_dark {
+  background: #221f3a;
+  width: 100%;
+  margin: 0 auto;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 4rem 3rem 0 3rem;
+  @include media('mobile') {
+    padding: 2rem 0rem 0rem 0rem;
+  }
+  .row {
+    padding: 0rem 6rem;
+    @include media('mobile') {
+      padding: 0rem;
+    }
+    .content {
+      display: flex;
+      align-content: center;
+      justify-content: flex-start;
+      .text {
+        max-width: 45%;
         @include media('mobile') {
           margin-left: 1rem;
           max-width: 80%;

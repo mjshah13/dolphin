@@ -5,7 +5,7 @@ import { Row, Col } from 'reactstrap';
 const Contact = () => {
   return (
     <div className={styles.main_contact}>
-      <Row>
+      <Row className={`${styles.style} g-0`}>
         <Col sm={12} md={6}>
           <div className={styles.content}>
             <h2>

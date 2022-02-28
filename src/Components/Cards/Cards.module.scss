@@ -6,20 +6,21 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 15rem;
+  padding-top: 4rem;
   @include media('mobile') {
     padding-top: 3rem;
     display: flex;
     justify-content: center;
     align-content: center;
   }
-  img {
+  .desktopImg {
     display: block;
     @include media('mobile') {
       width: 90%;
       display: flex;
       justify-content: center;
       align-content: center;
+      display: none;
     }
   }
 }
@@ -32,10 +33,32 @@
   }
 }
 
-.tilled {
-  position: relative;
-  top: 15rem;
+.right {
+  padding-right: 30rem;
   @include media('mobile') {
-    top: 0;
+    padding-right: 2rem;
+  }
+}
+
+.left {
+  padding-left: 30rem;
+  @include media('mobile') {
+    padding-left: 2rem;
+  }
+}
+
+// .tilled {
+//   position: relative;
+//   top: 15rem;
+//   @include media('mobile') {
+//     top: 0;
+//   }
+// }
+.mobileImg {
+  display: none;
+  @include media('mobile') {
+    display: block;
+    width: 319px;
+    height: 218px;
   }
 }

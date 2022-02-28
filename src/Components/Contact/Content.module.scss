@@ -1,18 +1,31 @@
 @import '../../index.scss';
 
 .main_contact {
-  width: 100%;
-  height: 100%;
-  overflow: hidden;
-  position: relative;
-  background-image: url('../../../public//Assets/bglinear.png');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: fixed;
-  padding-bottom: 20rem;
+  background: linear-gradient(
+    178.97deg,
+    #221f3a 86.82%,
+    rgb(7 3 41 / 78%) 92.4%,
+    rgba(34, 31, 58, 0) 500%
+  );
+  padding: 5rem;
   @include media('mobile') {
-    padding-bottom: 4rem;
+    padding: 0;
+    // background: none;
+  }
+  .style {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    background-image: url('../../../public/Assets/bglinear1.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    padding-bottom: 20rem;
+    @include media('mobile') {
+      padding-bottom: 4rem;
+    }
   }
   .content {
     width: 100%;
