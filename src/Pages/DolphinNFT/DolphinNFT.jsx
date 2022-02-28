@@ -10,8 +10,8 @@ const DolphinNFT = () => {
     <div className={styles.home_container}>
       <Header />
       <RoadMap />
-      <Community path={'dolphin'} />
-      <Footer path={'dolphin'} />
+      <Community />
+      <Footer />
     </div>
   );
 };

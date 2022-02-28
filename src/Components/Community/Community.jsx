@@ -2,13 +2,9 @@ import React from 'react';
 import styles from './Community.module.scss';
 import { Row, Col } from 'reactstrap';
 
-const Community = ({ path }) => {
-  const styleHandler = () => {
-    if (path === 'dolphin') return styles.bg_dark;
-    return styles.main_community;
-  };
+const Community = () => {
   return (
-    <div className={styleHandler()}>
+    <div className={styles.bg_dark}>
       <Row className={`${styles.row} gx-0`}>
         <Col sm={12} md={6}>
           <div className={styles.content}>
