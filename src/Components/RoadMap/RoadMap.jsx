@@ -14,19 +14,63 @@ const RoadMap = () => {
 
         <div className={styles.roadmap_container}>
           <div className={styles.roadmapOne_container}>
-            <img src='Assets/roadmap1.svg' alt='roadmap' />
-          </div>
-          <div className={styles.roadmapOne_container}>
-            <img src='Assets/roadmap2.svg' alt='roadmap' />
-          </div>
-          <div className={styles.roadmapOne_container}>
-            <img src='Assets/roadmap3.svg' alt='roadmap' />
-          </div>
-          <div className={styles.roadmapOne_container}>
-            <img src='Assets/roadmap4.svg' alt='roadmap' />
-          </div>
-          <div className={styles.roadmapOne_container}>
-            <img src='Assets/roadmap.svg' alt='roadmap' />
+            <div className={styles.drop_container}>
+              <div className={styles.container}>
+                <img src='Assets/drop.svg' alt='drop' />
+                <p>
+                  1:1 drop <br /> march 15
+                </p>
+              </div>
+              <img
+                className={styles.dotted_line}
+                src='Assets/linha.svg'
+                alt=''
+              />
+            </div>
+            <div className={styles.drop_container}>
+              <div className={styles.container}>
+                <img src='Assets/world.svg' alt='world' />
+                <p>x thousands unique worlds mint</p>
+              </div>
+              <img
+                className={styles.dotted_line}
+                src='Assets/linha.svg'
+                alt=''
+              />
+            </div>
+            <div className={styles.drop_container}>
+              <div className={styles.container}>
+                <img src='Assets/decoration.svg' alt='decoration' />
+                <p>claim your identical decoration</p>
+              </div>
+              <img
+                className={styles.dotted_line}
+                src='Assets/linha.svg'
+                alt=''
+              />
+            </div>
+            <div className={styles.drop_container}>
+              <div className={styles.container}>
+                <img src='Assets/ecosystem.svg' alt='ecosystem' />
+                <p>Special access to Dolphin ecosystem</p>
+              </div>
+              <img
+                className={styles.dotted_line}
+                src='Assets/linha.svg'
+                alt=''
+              />
+            </div>
+            <div className={styles.drop_container}>
+              <div className={styles.container}>
+                <img src='Assets/metaverse.svg' alt='roadmap' />
+                <p>Metaverse teleportation vault</p>
+              </div>
+              <img
+                className={styles.dotted_line}
+                src='Assets/linha.svg'
+                alt=''
+              />
+            </div>
           </div>
         </div>
         <div className={styles.underline_container}>
