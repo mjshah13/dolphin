@@ -10,8 +10,15 @@ const Header = () => {
           <img src='Assets/logo.svg' alt='dolphin-logo' />
         </div>
         <div className={styles.icons_container}>
-          <img src='Assets/discord.svg' alt='discord' />
-          <img id={styles.img2} src='Assets/twitter.svg' alt='twitter' />
+          <a href="https://discord.gg/y5hgWKs54S">
+            <img src='Assets/discord.svg' alt='discord' />
+          </a>
+          <a href="https://www.instagram.com/dolphin_adalia/">
+            <img src='Assets/instagramicon.png' alt='instagram' />
+          </a>
+          <a href="https://twitter.com/Dolphinhnft">
+            <img id={styles.img2} src='Assets/twitter.svg' alt='twitter' />
+          </a>
         </div>
       </div>
       <Row className={`${styles.text_div} gx-0`}>

@@ -12,9 +12,15 @@ const Footer = () => {
               <img src='Assets/logo.png' alt='footer logo' />
             </div>
             <div className={styles.footericons}>
-              <img src='Assets/discordfooter.png' alt='' />
-              <img src='Assets/instagramfooter.png' alt='' />
-              <img src='Assets/twitterfooter.png' alt='' />
+              <a href="https://discord.gg/y5hgWKs54S">
+                <img src='Assets/discordfooter.png' alt='' />
+              </a>
+              <a href="https://www.instagram.com/dolphin_adalia/">
+                <img src='Assets/instagramfooter.png' alt='' />
+              </a>
+              <a href="https://twitter.com/Dolphinhnft">
+                <img src='Assets/twitterfooter.png' alt='' />
+              </a>
             </div>
           </div>
         </Col>

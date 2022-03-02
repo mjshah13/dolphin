@@ -28,12 +28,20 @@
       }
     }
     .navbar_icons {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top: 5rem;
+      @include media('mobile') {
+        display: none;
+      }
       img {
-        padding: 0 1rem;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 40px;
+        @include media('mobile') {
+          margin-right: 10px;
+          width: 1.5rem;
+        }
+      }
+      #img2 {
+        margin-right: 0rem !important;
       }
     }
   }
@@ -101,7 +109,16 @@
         display: none;
       }
       img {
-        padding: 0 1.3rem;
+        width: 2rem;
+        height: 2rem;
+        margin-right: 40px;
+        @include media('mobile') {
+          margin-right: 10px;
+          width: 1.5rem;
+        }
+      }
+      #img2 {
+        margin-right: 0rem !important;
       }
     }
     :last-child {

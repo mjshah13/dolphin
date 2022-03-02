@@ -16,7 +16,7 @@ const Intro = () => {
         </Col>
         <Col sm={12} md={12}>
           <div className={styles.intro}>
-            <p>
+            <p id='aboutus'>
               Who <span>we are?</span>
             </p>
           </div>

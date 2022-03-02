@@ -14,9 +14,9 @@ const Heading = () => {
   function sideNavMobileCloser() {
     setSideNavbarState(false);
   }
-  useEffect(()=>{
+  useEffect(() => {
     console.log(location.pathname)
-  },[])
+  }, [])
   return (
     <div className={styles.home_container}>
       <Row>
@@ -27,25 +27,39 @@ const Heading = () => {
             </div>
             <div className={styles.navbar_links}>
               <p className={location.pathname === "/" ? styles.active_links : ""}>
-                <Link to=''>Home</Link>
+                <a >Home</a>
               </p>
               <p className={location.pathname === "/about" ? styles.active_links : ""}>
-                <Link to=''>About</Link>
+                <a href='#aboutus'>About</a>
               </p>
               <p className={location.pathname === "/dolphin-nft" ? styles.active_links : ""}>
-                <Link to=''>DolphinArc NFTS</Link>
+                <a href='metadolphin.art'>DolphinArc NFTS</a>
               </p>
               <p className={location.pathname === "/blog" ? styles.active_links : ""}>
-                <Link to=''>Blog</Link>
+                <a href="https://medium.com/@metadolphin">
+                  Blog
+                </a>
               </p>
               <p className={location.pathname === "/faq" ? styles.active_links : ""}>
-                <Link to=''>FAQ</Link>
+                <a href='https://www.metadolphin.io/faq'>FAQ</a>
               </p>
             </div>
             <div className={styles.navbar_icons}>
-              <img src='Assets/discordicon.png' alt='' />
-              <img src='Assets/instagramicon.png' alt='' />
-              <img src='Assets/twittericon.png' alt='' />
+        <div className={styles.icons_container}>
+              
+              <a href="https://discord.gg/y5hgWKs54S">
+              <img src='Assets/discordicon.png' alt='discord' />
+
+              </a>
+              <a href="https://www.instagram.com/dolphin_adalia/">
+              <img src='Assets/instagramicon.png' alt='instagram' />
+
+              </a>
+              <a href="https://twitter.com/Dolphinhnft">
+              <img id={styles.img2} src='Assets/twittericon.png' alt='twitter' />
+
+              </a>
+            </div>
             </div>
             <div
               className={styles.navbar_icons_mobile}

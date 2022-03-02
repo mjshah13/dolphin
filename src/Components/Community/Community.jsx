@@ -13,7 +13,7 @@ const Community = () => {
               <p>
                 Subscribe Discord server channel to stay informed of our news
               </p>
-              <button>Join our server</button>
+              <button ><a href=" https://discord.gg/8sbW4n8T"> Join our server</a></button>
             </div>
             <div className={styles.camabaImgMobile}>
               <img src='Assets/Camadamobile.png' alt='' />

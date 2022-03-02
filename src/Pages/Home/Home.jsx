@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './Home.module.scss';
-import { Row, Col } from 'reactstrap';
 import Heading from '../../Components/Heading/Heading';
 import Card from '../../Components/Card/Card';
 import Intro from '../../Components/Intro/Intro';
