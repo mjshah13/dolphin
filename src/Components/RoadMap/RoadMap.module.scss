@@ -71,14 +71,60 @@
         flex-direction: column;
       }
       .roadmapOne_container {
-        margin: 0 auto;
-        img {
-          width: 10rem;
-          @include media('tablet') {
-            width: 12rem;
+        // margin: 0 auto;
+        display: flex;
+        justify-content: space-evenly;
+        margin: auto;
+        width: 100%;
+        @include media('tablet') {
+          flex-direction: column;
+        }
+        @include media('mobile') {
+          flex-direction: column;
+        }
+
+        .drop_container {
+          margin: 0rem 2rem;
+          .container {
+            background-color: white;
+            display: block;
+            justify-content: center;
+            align-items: center;
+            margin: auto;
+            text-align: center;
+            padding: 1rem;
+            width: 10.5rem;
+            height: 9rem;
+            border-radius: 8px;
+            transform: translateY(60px);
+            border: 2px solid rgb(196, 140, 207);
+            @include media('tablet') {
+              transform: translateY(0px);
+              width: 12rem;
+              height: 10rem;
+            }
+            @include media('mobile') {
+              width: 11.5rem;
+              height: 9.5rem;
+            }
+
+            img {
+              width: 3rem;
+              margin-bottom: 1rem;
+            }
+            p {
+              color: black;
+              margin-bottom: 0rem;
+              font-size: 14px;
+              line-height: 18px;
+              font-family: Lexend;
+              font-weight: 600;
+            }
           }
-          @include media('mobile') {
-            width: 6.5rem;
+          .dotted_line {
+            display: flex;
+            margin: auto;
+            width: 1.4rem;
           }
         }
       }
