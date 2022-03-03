@@ -12,9 +12,9 @@ const Card = () => {
             img='Assets/Card1.png'
             mobileImg='Assets/cardmobile1.png'
             tilled='left'
-            name='Virtual Real Estate'
-            rightText='Lease for Ad'
-            leftText='Land owner'
+            name='Land rental'
+            rightText={{ text: 'Leaser', link: "https://forms.gle/7zXiA2ahbnud8RVa9" }}
+            leftText={{ text: 'Land owner', link: "https://forms.gle/QdP8i2xe8R3nU2vVA" }}
           />
         </Col>
         <Col sm={12} md={12}>
@@ -22,9 +22,8 @@ const Card = () => {
             img='Assets/Card2.png'
             mobileImg='Assets/cardmobile2.png'
             tilled='right'
-            name='Virtual Brick & Motar'
-            rightText='Lease for Ad'
-            leftText='Land owner'
+            name='Retail StoreFront'
+            leftText={{ text: 'Business Owner', link: "https://forms.gle/fCd1513WoNmn28Z57" }}
           />
         </Col>
         <Col sm={12} md={12}>
@@ -33,8 +32,8 @@ const Card = () => {
             mobileImg='Assets/cardmobile3.png'
             tilled='left'
             name='Event Hosting'
-            rightText='Lease for Ad'
-            leftText='Land owner'
+            rightText={{ text: 'Event host', link: "https://forms.gle/73qesj6eWnrgMpGq5" }}
+
           />
         </Col>
         <Col sm={12} md={12}>
@@ -42,9 +41,9 @@ const Card = () => {
             img='Assets/Card4.png'
             mobileImg='Assets/cardmobile4.png'
             tilled='right'
-            name='Virtual Brick & Motar'
-            rightText='Lease for Ad'
-            leftText='Land owner'
+            name='General Housing'
+            rightText={{ text: 'Purchasing', link: "https://forms.gle/eGhdy7g4WEi4RGJL6" }}
+            leftText={{ text: 'Building', link: "https://forms.gle/RU6fup4K1k7EASKUA" }}
           />
         </Col>
       </Row>

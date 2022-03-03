@@ -1,18 +1,3 @@
-// import React from 'react';
-// import styles from './Cards.module.scss';
-
-// const CardsComponent = ({ img, tilled, mobileImg }) => {
-//   return (
-//     <div className={styles.cards}>
-//       <div className={`${tilled === "left" ? styles.right : styles.left}`}>
-//         <img src={img} alt='cards' className={styles.desktopImg}/>
-//         <img src={mobileImg} alt="mobilecards" className={styles.mobileImg} />
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CardsComponent;
 
 import React from 'react';
 import styles from './Cards.module.scss';
@@ -30,17 +15,23 @@ const Cards = ({ img, tilled, mobileImg, name, rightText, leftText }) => {
               <h3>{name}</h3>
             </div>
             <div className={`${styles.buttons} buttons`}>
-              <div>
-                <p>
-                  <img src='Assets/leftbutton.png' alt='' />
-                  {leftText}
-                </p>
-              </div>
-              <div>
-                <p>
-                  <img src='Assets/rightbutton.png' alt='' /> {rightText}
-                </p>
-              </div>
+              {
+                leftText && <div>
+                  <a href={rightText?.link} target='_blank'>
+                    <img src='Assets/leftbutton.png' alt='' />
+                    {leftText?.text}
+                  </a>
+                </div>
+              }
+
+              {
+                rightText && <div>
+                  <a href={rightText?.link} target='_blank'>
+                    <img src='Assets/rightbutton.png' alt='' /> {rightText?.text}
+                  </a>
+                </div>
+              }
+
             </div>
           </div>
         </div>

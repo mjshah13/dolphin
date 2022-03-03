@@ -1,12 +1,9 @@
 .buttons {
   display: none !important;
-  transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out !important;
 }
 
-.cards:hover .buttons {
-  display: flex !important;
-  transition: all 1s ease-in-out;
-}
+
 
 @media only screen and (max-width: 767px) {
   .buttons {

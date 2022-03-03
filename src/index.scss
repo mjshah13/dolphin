@@ -64,6 +64,8 @@ body {
   font-family: Inter-Regular;
   color: black;
   background-color: $lightGrey !important;
+  transition: 1s all ease-in;
+
 }
 html {
   scroll-behavior: smooth;
