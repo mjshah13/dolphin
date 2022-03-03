@@ -9,7 +9,7 @@ const RoadMap = () => {
           <h1>
             road <span>map</span>
           </h1>
-          <img src='Assets/line.png' alt='line' />
+          <img src='Assets/line.svg' alt='line' />
         </div>
 
         <div className={styles.roadmap_container}>
@@ -18,12 +18,12 @@ const RoadMap = () => {
               <div className={styles.container}>
                 <img src='Assets/drop.svg' alt='drop' />
                 <p>
-                  1:1 drop <br /> march 15
+                  1:1 Prototype <br /> Review
                 </p>
               </div>
               <img
                 className={styles.dotted_line}
-                src='Assets/linha.svg'
+                src='Assets/road-map-line.svg'
                 alt=''
               />
             </div>
@@ -34,7 +34,7 @@ const RoadMap = () => {
               </div>
               <img
                 className={styles.dotted_line}
-                src='Assets/linha.svg'
+                src='Assets/road-map-line.svg'
                 alt=''
               />
             </div>
@@ -45,7 +45,7 @@ const RoadMap = () => {
               </div>
               <img
                 className={styles.dotted_line}
-                src='Assets/linha.svg'
+                src='Assets/road-map-line.svg'
                 alt=''
               />
             </div>
@@ -56,7 +56,7 @@ const RoadMap = () => {
               </div>
               <img
                 className={styles.dotted_line}
-                src='Assets/linha.svg'
+                src='Assets/road-map-line.svg'
                 alt=''
               />
             </div>
@@ -67,7 +67,7 @@ const RoadMap = () => {
               </div>
               <img
                 className={styles.dotted_line}
-                src='Assets/linha.svg'
+                src='Assets/road-map-line.svg'
                 alt=''
               />
             </div>
