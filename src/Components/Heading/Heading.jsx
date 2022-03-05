@@ -47,15 +47,15 @@ const Heading = () => {
             <div className={styles.navbar_icons}>
         <div className={styles.icons_container}>
               
-              <a href="https://discord.gg/y5hgWKs54S">
+        <a href="https://discord.com/invite/YmjWNCsDCm" target="_blank">
               <img src='Assets/discordicon.png' alt='discord' />
 
               </a>
-              <a href="https://www.instagram.com/dolphin_adalia/">
+              <a href="https://www.instagram.com/dolphin_adalia/" target="_blank">
               <img src='Assets/instagramicon.png' alt='instagram' />
 
               </a>
-              <a href="https://twitter.com/Dolphinhnft">
+              <a href="https://twitter.com/Dolphinhnft" target="_blank">
               <img id={styles.img2} src='Assets/twittericon.png' alt='twitter' />
 
               </a>

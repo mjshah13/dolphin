@@ -39,7 +39,10 @@ const Contact = () => {
               />
             </div>
             <div>
-              <button>Submit</button>
+            <a href="mailto: contact@metadolphin.io">
+            <button >Submit</button>
+              </a>
+              
             </div>
           </div>
         </Col>

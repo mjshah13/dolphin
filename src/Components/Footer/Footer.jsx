@@ -12,13 +12,13 @@ const Footer = () => {
               <img src='Assets/logo.png' alt='footer logo' />
             </div>
             <div className={styles.footericons}>
-              <a href="https://discord.gg/y5hgWKs54S">
+              <a href="https://discord.com/invite/YmjWNCsDCm" target="_blank">
                 <img src='Assets/discordfooter.png' alt='' />
               </a>
-              <a href="https://www.instagram.com/dolphin_adalia/">
+              <a href="https://www.instagram.com/dolphin_adalia/" target="_blank">
                 <img src='Assets/instagramfooter.png' alt='' />
               </a>
-              <a href="https://twitter.com/Dolphinhnft">
+              <a href="https://twitter.com/Dolphinhnft" target="_blank">
                 <img src='Assets/twitterfooter.png' alt='' />
               </a>
             </div>
