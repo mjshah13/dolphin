@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@700&family=Sora:wght@700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Lexend&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@200&display=swap');
 // Colors
 $white: #ffffff;
 $milkywhite: #ffffff;
@@ -31,8 +31,16 @@ $facebook_bg: #1675dc;
 $apple_bg: #171717;
 // font family
 @font-face {
-  font-family: Cocogoose;
+  font-family: COCOGOOSE;
   src: url('./Fonts/Cocogoose\ Pro\ Light-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: COCOGOOSE-Light;
+  src: url('./Fonts/Cocogoose\ Pro\ Ultralight-trial.ttf') format('truetype');
+}
+@font-face {
+  font-family: COCOGOOSE-Thin;
+  src: url('./Fonts/Cocogoose\ Pro\ Thin-trial.ttf') format('truetype');
 }
 // @font-face {
 //   font-family: Poppins-ExtraBold;

@@ -8,9 +8,9 @@ const Contact = () => {
       <Row className={`${styles.style} g-0`}>
         <Col sm={12} md={6}>
           <div className={styles.content}>
-            <h2>
+            <p className={styles.get_in_touch}>
               Get in <span>Touch</span>
-            </h2>
+            </p>
             <p>contact@metadolphin.io</p>
           </div>
         </Col>

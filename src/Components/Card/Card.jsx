@@ -12,7 +12,7 @@ const Card = () => {
             img='Assets/Card1.png'
             mobileImg='Assets/cardmobile1.png'
             tilled='left'
-            name='Land rental'
+            name='Virtual Real Estate'
             rightText={{ text: 'Leaser', link: "https://forms.gle/7zXiA2ahbnud8RVa9" }}
             leftText={{ text: 'Land owner', link: "https://forms.gle/QdP8i2xe8R3nU2vVA" }}
           />
@@ -22,7 +22,7 @@ const Card = () => {
             img='Assets/Card2.png'
             mobileImg='Assets/cardmobile2.png'
             tilled='right'
-            name='Retail StoreFront'
+            name='Virtual Brick & Motor'
             leftText={{ text: 'Business Owner', link: "https://forms.gle/fCd1513WoNmn28Z57" }}
           />
         </Col>
@@ -41,7 +41,7 @@ const Card = () => {
             img='Assets/Card4.png'
             mobileImg='Assets/cardmobile4.png'
             tilled='right'
-            name='General Housing'
+            name='General Architectures'
             rightText={{ text: 'Purchasing', link: "https://forms.gle/eGhdy7g4WEi4RGJL6" }}
             leftText={{ text: 'Building', link: "https://forms.gle/RU6fup4K1k7EASKUA" }}
           />

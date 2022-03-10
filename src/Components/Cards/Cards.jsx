@@ -14,7 +14,7 @@ const Cards = ({ img, tilled, mobileImg, name, rightText, leftText }) => {
             <div className={styles.cardsInfo}>
               <h3>{name}</h3>
             </div>
-            <div className={`${styles.buttons} buttons`}>
+            <div className={`${styles.buttons} buttons ${!leftText || !rightText ? "positionEnd" : ""}`}>
               {
                 leftText && <div>
                   <a href={rightText?.link} target='_blank'>

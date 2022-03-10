@@ -1,26 +1,24 @@
-@import '../../index.scss';
-
+@import "../../index.scss";
 
 .right {
   padding-right: 30rem;
-  @include media('tablet') {
+  @include media("tablet") {
     padding-right: 0rem;
   }
-  @include media('mobile') {
+  @include media("mobile") {
     padding-right: 2rem;
   }
 }
 
 .left {
   padding-left: 30rem;
-  @include media('tablet') {
+  @include media("tablet") {
     padding-left: 0rem;
   }
-  @include media('mobile') {
+  @include media("mobile") {
     padding-left: 2rem;
   }
 }
-
 
 .cards {
   height: 100%;
@@ -29,30 +27,30 @@
   align-content: center;
   cursor: pointer;
   padding: 2rem;
-  .cardsImg:hover .buttons{
+  .cardsImg:hover .buttons {
     display: flex !important;
     transition: all 1s ease-in-out;
   }
   .cardsImg {
     position: relative;
     .desktopImg {
-   
       height: 100%;
       border: 2px solid #ffffff;
       border-radius: 20px;
       display: block;
       opacity: 1;
-      @include media('tablet') {
+      @include media("tablet") {
         width: 100%;
       }
-      @include media('mobile') {
+      @include media("mobile") {
         display: none;
       }
     }
     .mobileImg {
       display: none;
-      @include media('mobile') {
+      @include media("mobile") {
         display: block;
+        width: 317.57px;
       }
     }
     .cardsArea {
@@ -61,20 +59,20 @@
       position: absolute;
       bottom: 2rem;
       padding: 0 3rem;
-      @include media('mobile') {
+      @include media("mobile") {
         padding: 0 1rem;
-        bottom: 0;
+        bottom: 1rem;
       }
 
       .buttons {
         width: 100%;
         height: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
         padding-top: 2rem;
         padding: 2rem 0.5rem 0 0.5rem;
-        @include media('mobile') {
+        @include media("mobile") {
           padding: 0.5rem 0.5rem 0 0.5rem;
         }
         a {
@@ -82,12 +80,13 @@
           font-family: Lexend;
           font-weight: 400;
           font-style: normal;
-          font-size: 12px;
+          font-size: 18px;
           line-height: 11.87px;
-          font-family: 'Lexend', sans-serif;
+          font-family: "Lexend", sans-serif;
           text-decoration: none;
           img {
             position: relative;
+            width: 2rem;
             right: 0.5rem;
           }
         }
@@ -99,14 +98,16 @@
         display: flex;
         flex-direction: column;
         h3 {
-          letter-spacing: 0px;
-          color: #ffffff;
+          font-family: Sora;
+          font-style: normal;
+          font-weight: bold;
           font-size: 40px;
-          line-height: 18px;
-          font-weight: 700;
-          font-family: 'Nunito', sans-serif;
-          font-family: 'Sora', sans-serif;
-          @include media('mobile') {
+          line-height: 1px;
+          display: flex;
+          align-items: center;
+          color: #ffffff;
+
+          @include media("mobile") {
             font-size: 18px;
           }
         }
@@ -114,12 +115,12 @@
           position: relative;
           bottom: 1.3rem;
           span {
-            letter-spacing: 0px;
-            color: #ffffff;
-            opacity: 1;
-            font-size: Poppins-Regular;
-            font-size: 16px;
+            font-family: Lexend;
+            font-style: normal;
             font-weight: normal;
+            font-size: 12px;
+            line-height: 12px;
+            color: #ffffff;
           }
           img {
             width: 41px;
