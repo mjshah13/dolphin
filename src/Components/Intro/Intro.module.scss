@@ -2,15 +2,15 @@
 
 .main_intro {
   width: 100%;
-  height: 170vh;
-  background-image: url('../../../public/Assets/wrw1.png');
+  height: auto;
+  background-image: url('../../../public/Assets/wrw11.png');
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   overflow: hidden;
   @include media('mobile') {
     background-image: url('../../../public/Assets/wrw1mobile.png');
-    height: 100vh;
+    height: auto;
     width: 100%;
   }
   .topPic {
@@ -45,8 +45,10 @@
     align-items: center;
     padding: 5rem 15rem;
     text-align: center;
+    padding-top: 2rem;
     @include media('mobile') {
       padding: 0 1rem;
+      padding-bottom: 4rem;
     }
     p {
       font-family: Lexend;
@@ -56,12 +58,18 @@
       line-height: 42px;
       text-align: center;
       color: #ffffff;
+
       @include media('mobile') {
         font-size: 16px;
       }
     }
     span {
-      color: #f8bdd6;
+      font-family: Lexend;
+      font-style: normal;
+      font-weight: 600;
+      background: -webkit-linear-gradient(#d789eb, #e491c1, #ffcdea);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
     }
   }
   .intro {
@@ -81,8 +89,10 @@
       font-size: 64px;
       line-height: 115.5%;
       color: #ffcdea;
+      margin-bottom: 0rem;
       @include media('mobile') {
         font-size: 44px;
+        margin-bottom: 0rem;
       }
       span {
         font-weight: bold;
@@ -91,12 +101,14 @@
     }
   }
   .linediv {
-    padding-left: 14rem;
+    padding-left: 10rem;
+    width: 100%;
     @include media('mobile') {
-      padding: 0;
+      padding-left: 1rem;
+      margin-bottom: 1.5rem;
+
       img {
         width: 50%;
-        height: 0.2rem;
       }
     }
   }

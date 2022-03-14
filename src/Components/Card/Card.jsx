@@ -13,8 +13,14 @@ const Card = () => {
             mobileImg='Assets/cardmobile1.png'
             tilled='left'
             name='Virtual Real Estate'
-            rightText={{ text: 'Leaser', link: "https://forms.gle/7zXiA2ahbnud8RVa9" }}
-            leftText={{ text: 'Land owner', link: "https://forms.gle/QdP8i2xe8R3nU2vVA" }}
+            rightText={{
+              text: 'Lease for Ad',
+              link: 'https://forms.gle/7zXiA2ahbnud8RVa9',
+            }}
+            leftText={{
+              text: 'Land owner',
+              link: 'https://forms.gle/QdP8i2xe8R3nU2vVA',
+            }}
           />
         </Col>
         <Col sm={12} md={12}>
@@ -23,7 +29,10 @@ const Card = () => {
             mobileImg='Assets/cardmobile2.png'
             tilled='right'
             name='Virtual Brick & Motor'
-            leftText={{ text: 'Business Owner', link: "https://forms.gle/fCd1513WoNmn28Z57" }}
+            singleLink={{
+              text: 'Business Owner',
+              link: 'https://forms.gle/fCd1513WoNmn28Z57',
+            }}
           />
         </Col>
         <Col sm={12} md={12}>
@@ -32,8 +41,10 @@ const Card = () => {
             mobileImg='Assets/cardmobile3.png'
             tilled='left'
             name='Event Hosting'
-            rightText={{ text: 'Event host', link: "https://forms.gle/73qesj6eWnrgMpGq5" }}
-
+            singleLink={{
+              text: 'Event host',
+              link: 'https://forms.gle/73qesj6eWnrgMpGq5',
+            }}
           />
         </Col>
         <Col sm={12} md={12}>
@@ -42,8 +53,14 @@ const Card = () => {
             mobileImg='Assets/cardmobile4.png'
             tilled='right'
             name='General Architectures'
-            rightText={{ text: 'Purchasing', link: "https://forms.gle/eGhdy7g4WEi4RGJL6" }}
-            leftText={{ text: 'Building', link: "https://forms.gle/RU6fup4K1k7EASKUA" }}
+            rightText={{
+              text: 'Sell yours',
+              link: 'https://forms.gle/eGhdy7g4WEi4RGJL6',
+            }}
+            leftText={{
+              text: 'Buy one',
+              link: 'https://forms.gle/RU6fup4K1k7EASKUA',
+            }}
           />
         </Col>
       </Row>

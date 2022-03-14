@@ -1,46 +1,45 @@
-@import "../../index.scss";
+@import '../../index.scss';
 
 .main_contact {
-  background: linear-gradient(
-    178.97deg,
-    #221f3a 86.82%,
-    rgb(7 3 41 / 78%) 92.4%,
-    rgba(34, 31, 58, 0) 500%
-  );
-  padding: 5rem;
-  @include media("mobile") {
+  background-image: url('../../../public/Assets/get_bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  padding: 10rem;
+  @include media('mobile') {
     padding: 0;
-    // background: none;
   }
   .style {
     width: 100%;
     height: 100%;
     overflow: hidden;
     position: relative;
-    background-image: url("../../../public/Assets/bglinear1.png");
+    background-image: url('../../../public/Assets/get.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    background-attachment: fixed;
-    padding-bottom: 20rem;
-    @include media("mobile") {
+    padding: 3.5rem;
+    border-radius: 12px;
+    @include media('mobile') {
+      padding: 0rem;
+      background-image: url('../../../public/Assets/getintouch.png');
+
       padding-bottom: 4rem;
+      border-radius: 0px;
     }
-    background-image: url('../../../public/Assets/getintouch.png');
   }
   .content {
-    width: 100%;
     height: 100%;
     display: flex;
-    align-items: flex-start;
+    margin: auto;
     justify-content: center;
-    padding-left: 5rem;
     flex-direction: column;
-    padding-top: 30rem;
-    @include media("mobile") {
+    position: relative;
+    @include media('mobile') {
       padding-top: 4rem;
+      text-align: center;
       padding-left: 3rem;
-      padding-bottom: 2rem;
+      padding-bottom: 0rem;
     }
     @media only screen and (max-width: 767px) {
       padding-left: 0;
@@ -48,20 +47,22 @@
       justify-content: center;
     }
     .get_in_touch {
-      font-family: COCOGOOSE-Light ;
+      font-family: COCOGOOSE-Light;
       font-style: normal;
       font-weight: 200;
       font-size: 64px;
       line-height: 115.5%;
-      color: #FFFFFF;
+      color: #ffffff;
       text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
-
-      @include media("mobile") {
-        font-size: 44px;
+      padding-left: 4rem;
+      @include media('mobile') {
+        font-size: 40px;
+        margin-bottom: 0.5rem;
+        padding-left: 0rem;
       }
       span {
         font-weight: bold;
-        font-family: COCOGOOSE
+        font-family: COCOGOOSE;
       }
     }
     p {
@@ -70,79 +71,124 @@
       font-weight: normal;
       font-size: 18px;
       line-height: 22px;
-      color: #FFCDEA;
+      color: #ffcdea;
+      padding-left: 4rem;
       text-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2);
+      @include media('mobile') {
+        color: $white;
+        font-size: 16px;
+        padding-left: 0rem;
+      }
+    }
+    img {
+      position: absolute;
+      top: 45px;
+      @include media('mobile') {
+        display: none;
+      }
     }
   }
   .form {
-    width: 80%;
-    height: 100%;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin-top: 10rem;
-    background: rgba(255, 255, 255, 0.25);
-    @include media("mobile") {
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(4px);
+    @include media('mobile') {
       width: 90%;
       margin: 0 auto;
-      border-radius: 10px;
-      margin-top: 2rem;
+      border-radius: 0px;
+      margin-top: 1rem;
+      height: auto;
     }
-    div {
-      margin: 2rem 0;
-    }
-    span {
-      display: block;
-      font-family: Lexend;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      color: #ffffff;
-      text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
-    }
-    input {
-      @include media("mobile") {
-        width: 300px;
+    .block {
+      width: 100%;
+      padding: 1.5rem 3.5rem;
+      @include media('mobile') {
+        padding: 1rem;
+        width: auto;
       }
-      width: 458px;
-      // width: 200%;
-      border: none;
-      height: 2rem;
-      border-bottom: 2px solid #ffffff;
-      background: none;
-      font-family: Lexend;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-      color: #ffffff;
-      opacity: 0.8;
-      outline: none;
-    }
-    & ::placeholder {
-      color: #ffffff;
-    }
-    .textarea {
-      padding-bottom: 5rem;
-      outline: none;
-      padding-top: 1rem;
-    }
-    button {
-      width: 458px;
-      border: none;
-      height: 2rem;
-      background: none;
-      border: 2px solid #ffffff;
-      font-family: Lexend;
-      font-style: normal;
-      font-weight: normal;
-      font-size: 16px;
-      line-height: 20px;
-      color: #ffffff;
-      @include media("mobile") {
-        width: 300px;
+      div {
+        margin: 2rem 0;
+      }
+      span {
+        display: block;
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        line-height: 22px;
+        color: #ffffff;
+        text-shadow: 0px 1px 1px rgba(0, 0, 0, 0.15);
+      }
+      input {
+        @include media('mobile') {
+          width: 300px;
+        }
+        width: 100%;
+        border: none;
+        height: 2rem;
+        border-bottom: 2px solid #ffffff;
+        background: none;
+        font-family: Lexend;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 20px;
+        color: #ffffff;
+        opacity: 0.8;
+        outline: none;
+      }
+      & ::placeholder {
+        color: #ffffff;
+      }
+      .textarea {
+        padding-bottom: 5rem;
+        outline: none;
+        padding-top: 1rem;
+        @include media('mobile') {
+          padding-bottom: 1rem;
+          border: none;
+          height: 2rem;
+          border-bottom: 2px solid #ffffff;
+          background: none;
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          opacity: 0.8;
+          outline: none;
+        }
+      }
+      .btn_container {
+        button {
+          width: 100%;
+          border: none;
+          height: 2rem;
+          background: none;
+          border: 2px solid #ffffff;
+          font-family: Lexend;
+          font-style: normal;
+          font-weight: normal;
+          font-size: 16px;
+          line-height: 20px;
+          color: #ffffff;
+          @include media('mobile') {
+            width: 300px;
+          }
+        }
+        :hover {
+          background-color: #ffcdea;
+          color: #221f3a;
+          border: none;
+          font-weight: 600;
+          width: 100%;
+          height: 2rem;
+        }
       }
     }
   }
